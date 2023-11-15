@@ -22,7 +22,12 @@ MENU: str = '''
 FILE_NAME: str = "Enrollments.json"
 
 # Define the Data Variables and constants
-students: list[dict[str, str]] = []  # a table of student data
+student_first_name: str = ''  # Holds the first name of a student entered by the user.
+student_last_name: str = ''  # Holds the last name of a student entered by the user.
+course_name: str = ''  # Holds the name of a course entered by the user.
+menu_choice: str  # Hold the choice made by the user.
+students: list[dict[str, str]] = []  
+file = None
 
 # When the program starts, read the file data into a list of dictionaries
 # Extract the data from the file
